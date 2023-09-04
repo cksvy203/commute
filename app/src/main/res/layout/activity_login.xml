@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--출퇴근 기록 부 앱 최상단 (주)하가-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/pretendard_bold"
+        android:text="(주)하가"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/input_linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353"
+        />
+
+    <LinearLayout
+        android:id="@+id/input_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:viewportWidth="313"
+        android:viewportHeight="49"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </LinearLayout>
+
+
+    <!-- 계정 입력 영역    -->
+
+    <EditText
+        android:id="@+id/eye_password"
+        android:layout_width="389dp"
+        android:layout_height="60dp"
+        android:viewportWidth="313"
+        android:viewportHeight="49"
+        android:background="@drawable/default_input_round2"
+        android:text=" Password"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="389dp" />
+
+    <EditText
+        android:layout_width="389dp"
+        android:layout_height="60dp"
+        android:background="@drawable/default_input_round"
+        android:text=" Email"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="266dp"
+        tools:ignore="MissingConstraints" />
+
+    <!--- 비밀번호 잊음 버튼 -->
+
+
+
+
+    <!-- Login Button 구성    -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
