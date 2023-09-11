@@ -46,9 +46,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
-
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:viewportWidth="313"
+        android:viewportHeight="49"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </LinearLayout>
 
     <!-- 계정 입력 영역    -->
 
@@ -68,24 +78,34 @@
         android:layout_width="389dp"
         android:layout_height="60dp"
         android:background="@drawable/default_input_round"
-        android:text=" Email"
+        android:text=" Email 또는 사번"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="11dp"
         tools:layout_editor_absoluteY="274dp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="266dp"
-        tools:ignore="MissingConstraints" />
-
     <!--- 비밀번호 잊음 버튼 -->
 
-
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 잊음"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="511dp"
+        android:gravity="center"
+        android:background="@null"
+        android:fontFamily="@font/pretendard_bold"
+        tools:ignore="MissingConstraints" />
 
 
     <!-- Login Button 구성    -->
-
+    <EditText
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle_3"
+        android:gravity="center"
+        android:text="로그인"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="615dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

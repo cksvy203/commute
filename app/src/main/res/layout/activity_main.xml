@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/input_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:viewportWidth="313"
+        android:viewportHeight="49"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:viewportWidth="313"
+        android:viewportHeight="49"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </LinearLayout>
+
+
+<!--    최상단 (주)하가 영역-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/pretendard_bold"
+        android:text="(주)하가"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/input_linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353"
+        tools:ignore="UnknownIdInLayout" />
+<!--    환영 문구 영역-->
+
+    <!--    현황 표시 영역-->
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/pretendard_bold"
+        android:gravity="center"
+        android:text="ooo님 반갑습니다."
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <!--    출퇴근 버튼-->
+
+    <EditText
+        android:layout_width="389dp"
+        android:layout_height="120dp"
+        android:background="@drawable/default_input_round_4"
+        android:gravity="left"
+        android:text=" 근무 현황"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <EditText
+        android:layout_width="389dp"
+        android:layout_height="120dp"
+        android:background="@drawable/default_input_round_5"
+        android:gravity="left"
+        android:text=" 출/퇴근 현황"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="354dp" />
+
+    <!--    하단 메뉴 버튼 영역-->
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle_3"
+        android:gravity="center"
+        android:text="출근"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rectangle_3"
+        android:gravity="center"
+        android:text="퇴근"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="233dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="28dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:gravity="top"
+        android:text="홈"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="688dp" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:gravity="top"
+        android:text="일정"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="688dp" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/pretendard_regular"
+        android:gravity="top"
+        android:text="공지사항"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="316dp"
+        tools:layout_editor_absoluteY="688dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
