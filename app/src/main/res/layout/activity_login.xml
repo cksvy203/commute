@@ -85,19 +85,33 @@
 
     <!--- 비밀번호 잊음 버튼 -->
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="비밀번호 잊음"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="511dp"
-        android:gravity="center"
-        android:background="@null"
-        android:fontFamily="@font/pretendard_bold"
-        tools:ignore="MissingConstraints" />
-
+    <!-- 회원가입 버튼 -->
 
     <!-- Login Button 구성    -->
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="224dp"
+        android:background="@null"
+        android:fontFamily="@font/pretendard_bold"
+        android:gravity=""
+        android:text="비밀번호 잊음"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="511dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:background="@null"
+        android:fontFamily="@font/pretendard_bold"
+        android:gravity=""
+        android:text="회원가입"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="511dp" />
+
     <EditText
         android:layout_width="312dp"
         android:layout_height="48dp"
